@@ -1,0 +1,129 @@
+// font-family: 'Open Sans', sans-serif;
+
+$light-color: #fff;
+$accent-color: #65e496;
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.page-main {
+    background-image: url(../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 165px;
+
+    &__logo{
+        background-image: url(../img/logo.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 137px;
+        height: 28px;
+    }
+
+    &-list{
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        font-family: 'Open Sans', sans-serif;
+
+        &__item{
+            margin-left: 22px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s;
+            &:hover{
+                border-bottom: 3px solid $accent-color;
+            }
+        }
+
+        &__item.active{
+            border-bottom: 3px solid  $accent-color;
+
+        &__link{
+            color: $light-color;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }    
+        }
+    }
+}
+
+.block-text {
+    &__name{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: 700;
+
+        span{
+            display: block;
+            color: $accent-color;
+            font-size: 18px;
+        }
+    }
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}  
+
+&__btn{
+    display: block;
+    background-color: $accent-color;
+    color: $light-color;
+    text-decoration: none;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 3px;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+}
+
+.block-cover{
+    &-demo{
+        display: block;
+        width: 447px;
+        height: 643px;
+        background-image: url(../img/book.png);
+        background-repeat: no-repeat;
+        flex-basis: 500px;
+    }
+}
+
+.block-book{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-text{
+    flex-basis: calc(100% - 500px);
+
+    &__name{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+}
+
+.wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
